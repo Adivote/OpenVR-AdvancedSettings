@@ -13,7 +13,7 @@ jobs:
             QT_SELECT: opt-qt512
             MAKE_JOBS: 2
         docker:
-            - image: circleci/buildpack-deps:xenial
+            - image: circleci/buildpack-deps:bionic
         steps:
             - checkout
             - run: sudo apt-get update && sudo apt-get upgrade -y
